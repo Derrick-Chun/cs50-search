@@ -1,0 +1,65 @@
+/* Base reset & font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Top‑right navigation */
+  .top-nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  .top-nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 14px;
+  }
+  
+  /* Centered search form */
+  .search-form {
+    /* roughly center vertically */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Search input */
+  .search-form input[type="text"] {
+    width: 500px;
+    max-width: 80vw;
+    padding: 10px 15px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Submit buttons */
+  .search-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  /* “I’m Feeling Lucky” slight variant */
+  .search-form input[type="submit"][name="btnI"] {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #1a0dab;
+  }
+  
