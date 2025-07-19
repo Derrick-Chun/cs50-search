@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Back link to the main search page -->
+    <!-- Link back to main search page only -->
     <div id="nav-top">
         <a href="index.html">Google Search</a>
     </div>
 
-    <!-- Advanced search form with four parameters -->
+    <!-- Advanced search form -->
     <form id="advForm" action="https://www.google.com/search" method="get">
-        <label>All these words: <input type="text" name="as_q"></label><br>
-        <label>Exact phrase: <input type="text" name="as_epq"></label><br>
-        <label>Any of these words: <input type="text" name="as_oq"></label><br>
-        <label>Exclude words: <input type="text" name="as_eq"></label><br>
-        <!-- Advanced Search button -->
-        <button type="submit" class="advanced">Advanced Search</button>
+        <div class="field">
+            <label>All these words: <input type="text" name="as_q"></label>
+        </div>
+        <div class="field">
+            <label>Exact phrase: <input type="text" name="as_epq"></label>
+        </div>
+        <div class="field">
+            <label>Any of these words: <input type="text" name="as_oq"></label>
+        </div>
+        <div class="field">
+            <label>Exclude words: <input type="text" name="as_eq"></label>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="advanced">Advanced Search</button>
+        </div>
     </form>
 </body>
 </html>

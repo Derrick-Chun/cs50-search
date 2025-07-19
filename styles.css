@@ -1,18 +1,15 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
     position: relative;
 }
 
-/* Navigation styling */
 #nav-top {
     position: absolute;
     top: 10px;
@@ -25,7 +22,7 @@ body {
     color: #1a0dab;
 }
 
-/* Center the forms */
+/* Center forms on page */
 form {
     position: absolute;
     top: 50%;
@@ -34,7 +31,18 @@ form {
     text-align: center;
 }
 
-/* Text input styling */
+/* Spacing for form fields */
+.field {
+    margin-bottom: 12px;
+}
+
+/* Buttons wrapper for centering */
+.buttons {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* Input styling */
 input[type="text"] {
     width: 350px;
     padding: 8px;
@@ -43,9 +51,9 @@ input[type="text"] {
     font-size: 16px;
 }
 
-/* Button styling */
+/* Default button styling */
 button {
-    margin-top: 12px;
+    margin: 4px;
     padding: 8px 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -54,12 +62,12 @@ button {
     cursor: pointer;
 }
 
-/* I'm Feeling Lucky variant */
+/* 'I'm Feeling Lucky' variant */
 button.lucky {
-    margin-left: 8px;
     background: none;
     border: none;
     color: #1a0dab;
+    margin-left: 8px;
 }
 
 /* Advanced Search button style */
@@ -67,7 +75,6 @@ button.advanced {
     background-color: #4285f4;
     color: white;
     border: none;
-    border-radius: 4px;
     padding: 8px 16px;
     margin-top: 12px;
     font-size: 14px;

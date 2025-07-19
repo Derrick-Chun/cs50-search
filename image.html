@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Back to main search page link -->
+    <!-- Link back to main search page only -->
     <div id="nav-top">
         <a href="index.html">Google Search</a>
     </div>
 
     <!-- Image search form -->
     <form id="imageForm" action="https://www.google.com/search" method="get">
-        <!-- hidden field to request images -->
         <input type="hidden" name="tbm" value="isch">
-        <!-- query input -->
-        <input type="text" name="q" placeholder="Search Images" required>
-        <!-- submit button for images -->
-        <button type="submit">Search Images</button>
+        <div class="field">
+            <input type="text" name="q" placeholder="Search Images" required>
+        </div>
+        <div class="buttons">
+            <button type="submit">Search Images</button>
+        </div>
     </form>
 </body>
 </html>
