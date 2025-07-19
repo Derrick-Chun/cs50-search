@@ -31,9 +31,10 @@ form {
     text-align: center;
 }
 
-/* Spacing for form fields */
+/* Spacing for form fields and left-align labels/inputs */
 .field {
     margin-bottom: 12px;
+    text-align: left;
 }
 
 /* Buttons wrapper for centering */
