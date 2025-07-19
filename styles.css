@@ -1,79 +1,80 @@
-/* Base reset & font */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+/* Body styling */
+body {
     font-family: Arial, sans-serif;
     height: 100vh;
     position: relative;
-  }
-  
-  /* Top‑right navigation */
-  .top-nav {
+}
+
+/* Navigation styling */
+#nav-top {
     position: absolute;
-    top: 20px;
-    right: 30px;
-  }
-  
-  .top-nav a {
-    color: #1a0dab;
+    top: 10px;
+    right: 10px;
+}
+#nav-top a {
+    margin-left: 8px;
     font-size: 14px;
-    margin-left: 15px;
     text-decoration: none;
-  }
-  
-  /* Centered search form */
-  .search-form {
-    /* roughly center vertically */
-    left: 50%;
+    color: #1a0dab;
+}
+
+/* Center the forms */
+form {
     position: absolute;
-    text-align: center;
-    top: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  /* Search input */
-  .search-form input[type="text"] {
-    border: 1px solid #dfe1e5;
-    border-radius: 24px;
+    text-align: center;
+}
+
+/* Text input styling */
+input[type="text"] {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     font-size: 16px;
-    max-width: 80vw;
-    outline: none;
-    padding: 10px 15px;
-    width: 500px;
-  }
-  
-  /* Submit buttons */
-  .search-form input[type="submit"] {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
+}
+
+/* Button styling */
+button {
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    cursor: pointer;
+    background-color: #f0f0f0;
     font-size: 14px;
-    margin-top: 20px;
-    padding: 8px 16px;
-  }
-  
-  /* “I’m Feeling Lucky” slight variant */
-  .search-form input[type="submit"][name="btnI"] {
-    background-color: transparent;
+    cursor: pointer;
+}
+
+/* I'm Feeling Lucky variant */
+button.lucky {
+    margin-left: 8px;
+    background: none;
     border: none;
     color: #1a0dab;
-    margin-left: 10px;
-  }
-  
-  /* Advanced Search button style */
-  .search-form input.advanced {
+}
+
+/* Advanced Search button style */
+button.advanced {
     background-color: #4285f4;
+    color: white;
     border: none;
     border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 20px;
     padding: 8px 16px;
-  }
-  
+    margin-top: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hide hidden inputs */
+input[type="hidden"] {
+    display: none;
+}

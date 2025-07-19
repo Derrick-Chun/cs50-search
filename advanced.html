@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Advanced Search</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Top‑right link back to main Search -->
-  <nav class="top-nav">
-    <a href="index.html">Google Search</a>
-  </nav>
+    <!-- Back link to the main search page -->
+    <div id="nav-top">
+        <a href="index.html">Google Search</a>
+    </div>
 
-  <!-- Advanced search form -->
-  <form action="https://www.google.com/search" method="get" class="search-form">
-    <div>
-      <label for="as_q">All these words:</label><br>
-      <input type="text" id="as_q" name="as_q">
-    </div>
-    <div>
-      <label for="as_epq">This exact phrase:</label><br>
-      <input type="text" id="as_epq" name="as_epq">
-    </div>
-    <div>
-      <label for="as_oq">Any of these words:</label><br>
-      <input type="text" id="as_oq" name="as_oq">
-    </div>
-    <div>
-      <label for="as_eq">None of these words:</label><br>
-      <input type="text" id="as_eq" name="as_eq">
-    </div>
-    <!-- Advanced Search button -->
-    <input type="submit" value="Advanced Search" class="advanced">
-  </form>
+    <!-- Advanced search form with four parameters -->
+    <form id="advForm" action="https://www.google.com/search" method="get">
+        <label>All these words: <input type="text" name="as_q"></label><br>
+        <label>Exact phrase: <input type="text" name="as_epq"></label><br>
+        <label>Any of these words: <input type="text" name="as_oq"></label><br>
+        <label>Exclude words: <input type="text" name="as_eq"></label><br>
+        <!-- Advanced Search button -->
+        <button type="submit" class="advanced">Advanced Search</button>
+    </form>
 </body>
 </html>
